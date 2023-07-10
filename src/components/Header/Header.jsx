@@ -1,7 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import "./Header.scss";
 import {NavLink} from "react-router-dom";
 import {motion} from "framer-motion"
+import { useLocation } from 'react-router-dom';
+
 // Icon
 import email from "../../asset/icons8-email-100.png";
 import github from "../../asset/icons8-github-128.png";
@@ -9,6 +11,8 @@ import linkedin from "../../asset/icons8-linkedin-50.png";
 import menu from "../../asset/icons8-menu-64.png";
 import cross from "../../asset/icons8-cross-30.png";
 const Header = () => {
+    const location = useLocation();
+    const currentLocation = location.pathname;
     const [active, setActive] = useState(1);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     // menu variants
@@ -23,6 +27,12 @@ const Header = () => {
             duration: 0.5
         } },
     }
+    useEffect(() => {
+        if(currentLocation === "/") setActive(1);
+        if(currentLocation === "/projects") setActive(2);
+        if(currentLocation === "/experience") setActive(3);
+        if(currentLocation === "/resume") setActive(4);
+    }, [currentLocation])
     return (
     <header>
             <motion.nav
@@ -33,19 +43,27 @@ const Header = () => {
             >
                 <div className="header__content">
                     <nav className="header__nav">
-                        <NavLink to="/" onClick={()=>setActive(1)} className={active === 1 ? "header__item--active" : "header__item"}>
+                        <NavLink to="/" onClick={()=>{
+                                setIsMenuOpen(false);
+                            }} className={active === 1 ? "header__item--active" : "header__item"}>
                             <p className="header__item-text">01</p>
                             <p className="header__item-text">About Me</p>
                         </NavLink>
-                        <NavLink to="/projects" onClick={()=>setActive(1)} className={active === 2 ? "header__item--active" : "header__item"}>
+                        <NavLink to="/projects" onClick={()=>{
+                                setIsMenuOpen(false);
+                            }} className={active === 2 ? "header__item--active" : "header__item"}>
                             <p className="header__item-text">02</p>
                             <p className="header__item-text">Projects</p>
                         </NavLink>
-                        <NavLink to="/experience" onClick={()=>setActive(1)} className={active === 3 ? "header__item--active" : "header__item"}>
+                        <NavLink to="/experience" onClick={()=>{
+                                setIsMenuOpen(false);
+                            }} className={active === 3 ? "header__item--active" : "header__item"}>
                             <p className="header__item-text">03</p>
                             <p className="header__item-text">Experience</p>
                         </NavLink>
-                        <NavLink to="/resume" onClick={()=>setActive(1)} className={active === 4 ? "header__item--active" : "header__item"}>
+                        <NavLink to="/resume" onClick={()=>{
+                                setIsMenuOpen(false);
+                            }} className={active === 4 ? "header__item--active" : "header__item"}>
                             <p className="header__item-text">04</p>
                             <p className="header__item-text">Resume</p>
                         </NavLink>
@@ -54,7 +72,7 @@ const Header = () => {
         </motion.nav>
 
         
-        <div className="header">
+        <div className="header2">
             <div className="header__left">
                 <motion.a
                     whileHover={{scale: 1.15}}
@@ -76,16 +94,16 @@ const Header = () => {
                 </motion.a> 
             </div>
             <div className="header__right--big-screen">
-                <NavLink onClick={()=>setActive(1)} className="header__anchor" to="/">
+                <NavLink className="header__anchor" to="/">
                     <p className={active === 1 ? "header__link--active" : "header__link"}>01<span>About Me</span></p>
                 </NavLink>
-                <NavLink onClick={()=>setActive(2)} className="header__anchor" to="/projects">
+                <NavLink className="header__anchor" to="/projects">
                     <p className={active === 2 ? "header__link--active" : "header__link"}>02<span>Projects</span></p>
                 </NavLink>
-                <NavLink onClick={()=>setActive(3)} className="header__anchor" to="/experience">
+                <NavLink className="header__anchor" to="/experience">
                     <p className={active === 3 ? "header__link--active" : "header__link"}>03<span>Experience</span></p>
                 </NavLink>
-                <NavLink onClick={()=>setActive(4)} className="header__anchor" to="/resume">
+                <NavLink className="header__anchor" to="/resume">
                     <p className={active === 4 ? "header__link--active" : "header__link"}>04<span>Resume</span></p>
                 </NavLink>
             </div>

@@ -2,43 +2,51 @@
 @use "../../styles/_mixins" as *;
 
 .homepage {
-    margin: 0.5rem;
-    @include tablet {
-        margin: 1rem;
-    }
+    background-color: $blue;
+    color: white;
     &__hero {
-        color: white;
-        background-image: linear-gradient(35deg, $blue 25%, $red);
-        border-radius: 15px;
         display: flex;
+        height: 88vh;
     }
     &__about {
-        margin: 1.5rem 0;
-        padding: 0 0.5rem;
+        margin: 3rem 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
         @include tablet {
-            margin: 2.5rem 0;
+            margin: 3.5rem 7% 10rem 7%;
+            flex-direction: row;
+            gap: 5rem;
         }
         @include desktop{
             padding: 0 10%;
         }
     }
     &__projects {
-        margin-bottom: 1.5rem;
-        padding: 0 0.5rem;
+        margin-bottom: 3rem;
+        padding: 0 1rem 3rem 1rem;
         @include tablet {
-            margin: 2.5rem 0;
+            margin: 3.5rem 7% 0 7%;
         }
         @include desktop{
-            padding: 0 10%;
+            padding: 0 10% 3rem 10%;
         }
     }
 }
 .hero{
     &__left {
-        padding: 2.5rem 1.5rem;
+        padding: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         @include tablet{
-            padding: 4.5rem 7%;
-            width: 45%;
+            padding-left: 7%;
+            width: 50%;
+        }
+        @include desktop{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
     &__right {
@@ -46,7 +54,7 @@
         @include tablet {
             display: flex;
             flex-direction: column;
-            justify-content: end;
+            justify-content: center;
             align-items: end;
             padding-right: 2.5rem;
         }
@@ -57,15 +65,14 @@
     &__forest {
         width: 85%;
         max-width: 435px;
+        @include desktop{
+            max-width: 600px;
+        }
     }
     &__title{
         font-size: 1.7rem;
         font-weight: 600;
-        line-height: 2.2rem;
-        @include tablet{
-            font-size: 2rem;
-            line-height: 2.6rem;
-        }
+        line-height: 2.6rem;
         @include desktop{
             font-size: 2.3rem;
             line-height: 3.2rem;
@@ -86,12 +93,12 @@
         }
     }
     &__name {
-        color: $yellow;
+        color: $green;
     }
     &__btn {
-        border: solid 1.5px $yellow;
+        border: solid 1.5px $green;
         background-color: transparent;
-        color: white;
+        color: $green;
         padding: 0.5rem 1.5rem;
         border-radius: 25px;
         font-family: 'Montserrat', sans-serif;
@@ -100,6 +107,7 @@
         cursor: pointer;
         @include desktop {
             font-size: 0.9rem;
+            width: fit-content;
         }
     }
 }
@@ -117,8 +125,10 @@
         }
     }
     &__info {
+        margin: 2rem 0;
         @include tablet {
             order: 1;
+            margin: 0;
         }
     }
     &__avatar {
@@ -133,8 +143,14 @@
         }
     }
     &__title-container {
-
         @include section-title-container;
+        width: fit-content;
+        @include tablet {
+            width: 100%;
+        }
+        @include desktop{
+            width: 70%;
+        }
     }
     &__title {
         @include section-title;
@@ -143,33 +159,31 @@
         @include section-title-border;
     }
     &__skills {
-        margin: 1.2rem 0;
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
+        margin-top: 1rem;
     }
     &__skill {
         font-size:12px;
         font-weight: 600;
+        background-color: rgba(white, 0.1);
+        border-radius: 15px;
         color: white;
-        padding: 0.2rem 0;
+        padding: 0.1rem 0;
         width: 23%;
         text-align: center;
         @include desktop {
             width: 15%;
         }
     }
-    &__details {
-        @include desktop {
-            margin: 2rem 0;
-        }
-    }
     &__detail {
         font-size: 12px;
         font-weight: 500;
-        margin-bottom: 1rem;
+        margin-bottom: 2.5rem;
         line-height: 1.25rem;
         @include desktop {
+            margin-bottom: 3rem;
             font-size: 14px;
             line-height: 1.45rem;
         }
@@ -182,35 +196,45 @@
         }
     }
     &__btn {
-        color: white;
-        background-color: $blue;
+        color: $green;
         border-radius: 20px;
-        border: none;
+        background-color: transparent;
+        border: solid 1px $green;
         padding: 0.4rem 1.2rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 0.7rem;
         &:hover {
-            background-color: $red;
+            border: solid 1px white;
+            color: white;
             transition: 0.5s;
         }
         @include tablet {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             padding: 0.45rem 1.4rem;
         }
+    }
+    &__question {
+        color: $green;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
     }
 }
 .projects {
     &__project {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
         @include tablet{
-            margin-bottom: 3.5rem;
+            margin-bottom: 5rem;
         }
     }
     &__title-container {
         @include section-title-container;
+        margin-bottom: 4rem;
+        @include tablet {
+            margin-bottom: 5rem;
+        }
         @include desktop{
-            margin-bottom: 3.5rem;
+            margin-bottom: 5rem;
         }
     }
     &__title {
@@ -224,28 +248,28 @@
     &__content{
         @include tablet{
             display: flex;
-            gap: 1.5rem;
-            padding-top: 0.8rem;
+            gap: 2.5rem;
+            padding-top: 2rem;
+            align-items: start;
         }   
     }
     &__info {
-        @include tablet {
-            order: 1;
-        }
+
     }
     &__title{
         @include project-title;
-
+        @include desktop {
+            margin-bottom: 1.5rem;
+        }
     }
     &__img {
         width: 100%;
-        border: solid 3px $blue;
         border-radius: 5px;
         margin: 1rem 0;
+        object-fit: contain;
         @include tablet{
             margin: 0;
-            width: 40%;
-            order: 2;
+            width: 30%;
         }
     }
     &__techstacks {
@@ -255,7 +279,7 @@
     }
     &__item {
         width: 25%;
-        background-color: $blue;
+        background-color: rgba(white, 0.1);
         color: white;
         padding: 0.2rem 0.5rem;
         font-size: 0.7rem;
@@ -265,10 +289,10 @@
         }
     }
     &__detail{
-        margin: 1rem 0;
+        margin: 1.5rem 0;
         font-weight: 500;
         font-size: 0.8rem;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
         @include tablet{
             margin: 1.5rem 0;
         }
@@ -281,13 +305,15 @@
         display: flex;
         justify-content: end;
         position: relative;
+        margin-top: 1rem;
         @include tablet {
             justify-content: start;
+            margin-top: 2rem;
         }
     }
     &__btn {
-        background-color: $red;
-        color: white;
+        background-color: white;
+        color: $blue;
         border: none;
         font-weight: 500;
         font-family: 'Montserrat', sans-serif;
@@ -306,14 +332,23 @@
         }
     }
     &__btn-bg{
-        background-color: $blue;
+        background-color: $green;
         height: 30px;
         width: 120px;
     }
+    &__archive-link {
+        color: black;
+        text-decoration: none;
+        color: $green;
+    }
+    &__archive{
+        width: 20px;
+        margin-bottom: -0.2rem;
+        margin-left: 0.5rem;
+    }
 }
-.bg-red{
-    background-color: $red;
-}
-.bg-blue{
-    background-color: $blue;
+
+.m-bottom{
+    display: block;
+    margin-bottom: 1rem;
 }

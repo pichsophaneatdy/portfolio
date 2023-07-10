@@ -1,11 +1,12 @@
 import React from 'react';
 import "./Homepage.scss";
 import {motion} from "framer-motion";
-
+import {Link} from "react-router-dom";
 // Images
 import forest from "../../asset/output-onlinepngtools.png";
 import sun from "../../asset/sun.png";
 import avatar from "../../asset/Avatars - Default with Backdrop.png";
+import link from "../../asset/icons8-external-link-48 (1).png";
 // Screenshort 
 import explorecity from "../../asset/explorecity.jpeg";
 import ai from "../../asset/ai_image_generator.png";
@@ -42,7 +43,7 @@ const Homepage = () => {
                     >
                         <p className="hero__title">Hello,</p>
                         <p className="hero__title">I am <span className="hero__name">Neat.</span></p>
-                        <p className="hero__title">Web Developer</p>
+                        <p className="hero__title">I am a web developer.</p>
                     </motion.div>
                     <motion.p 
                         initial={{opacity: 0}}
@@ -55,14 +56,16 @@ const Homepage = () => {
                     >
                         I make positive impact by building websites. I love three things: coffee, hiking and coding.
                     </motion.p>
-                    <motion.button
-                        variants={buttonVariants}
-                        initial="initial"
-                        animate="animate"
-                        whileHover="hover"
-                        className="hero__btn">
-                        Check out my projects
-                    </motion.button>
+                    <Link to="/projects">
+                        <motion.button
+                            variants={buttonVariants}
+                            initial="initial"
+                            animate="animate"
+                            whileHover="hover"
+                            className="hero__btn">
+                            Check out my projects
+                        </motion.button>
+                    </Link>
                 </div>
                 <div className="hero__right">
                     <motion.img 
@@ -107,48 +110,101 @@ const Homepage = () => {
                     </motion.img>
                 </div>
             </div>
-            <div className="homepage__about">
-                <div className="about__title-container">
+            {/* About */}
+            <div 
+                className="homepage__about"
+            >
+                <motion.div 
+                    className="about__title-container"
+                    initial={{opacity: 0}}
+                    whileInView={{opacity:1}}
+                    transition={{duration: 1.5, delay: 0.5}}
+                >
                     <h1 className="about__title">ABOUT ME</h1>
                     <div className="about__border"></div>
-                </div>
+                </motion.div>
                 <div className="about__content">
-                    <img src={avatar} alt="Avatar" className="about__avatar"/>
                     <div className="about__info">
-                        <div className="about__skills">
-                            <p className="about__skill bg-blue">HTML</p>
-                            <p className="about__skill bg-blue">CSS</p>
-                            <p className="about__skill bg-blue">Sass</p>
-                            <p className="about__skill bg-blue">JavaScript</p>
-                            <p className="about__skill bg-blue">React</p>
-                            <p className="about__skill bg-blue">BootStrap</p>
-                            <p className="about__skill bg-red">Node.js</p>
-                            <p className="about__skill bg-red">Express.js</p>
-                            <p className="about__skill bg-red">MongoDB</p>
-                            <p className="about__skill bg-red">Mongoose</p>
-                            <p className="about__skill bg-red">MySQL</p>
-                            <p className="about__skill bg-red">Knex.js</p>
-                        </div>
                         <div className="about__details">
-                            <p className="about__detail">Back in Grade 10, I decided to join a coding competition called “Technovation Girls” with a bunch of friends, but never could I ever imagine this coding competition has led me to find my passion and the kind of career I want. </p>
-                            <p className="about__detail">Right after high school in 2020, I decided to pursue a bachelor degree in information technology, and I can’t wait to graduate in a couple of months. I remembered learning JavaScript as my first programming language, and suddenly fell in love with it.</p>
-                            <p className="about__detail">Currently in my senior year, I am working as a Student IT Assistant, and I really enjoy providing technical supports to students, staff and faculty. I can’t wait to take on the challenges in the web development field as I am super excited to learn and explore new technologies.</p>
+                            <motion.div 
+                                initial={{opacity: 0}}
+                                whileInView={{opacity:1}}
+                                transition={{duration: 1.5, delay: 0.5}}
+                                className="about__detail"
+                            >
+                                <p className="about__question">How I started coding</p>
+                                <p className="about__answer">
+                                    Back in Grade 10, I decided to join a coding competition called “Technovation Girls” with some friends, but never could I ever imagine this coding competition has led me to find my passion for coding and the kind of career I want. 
+                                </p>
+                            </motion.div>
+                            <motion.div 
+                                initial={{opacity: 0}}
+                                whileInView={{opacity:1}}
+                                transition={{duration: 1.5, delay: 0.5}}
+                                className="about__detail"
+                            >
+                                <p className="about__question">My Education</p>
+                                <p className="about__answer"><span className="m-bottom">Right after high school in 2020, I decided to pursue a bachelor degree in information technology at Fairleigh Dickinson University, Vancouver.</span><span className="m-bottom">During the last three years in university, I have been introduced to many computer science concepts including object-oriented programming in Java, data structure, algorithms, C#, ASP.Net, JavaScript.</span> <span className="m-bottom">I can't wait to graduate in Decemeber 2023.</span></p>
+                            </motion.div>
+                            <motion.div 
+                                initial={{opacity: 0}}
+                                whileInView={{opacity:1}}
+                                transition={{duration: 1.5, delay: 0.5}}
+                                className="about__detail"
+                            >
+                                <p className="about__question">My Professional Experience</p>
+                                <p className="about__answer">Since August 2022, I have been working as a Student IT Assistant at Fairleigh Dickinson University. I really enjoy providing technical support to students. staff, and faculty.</p>
+                            </motion.div>
+                            <motion.div 
+                                initial={{opacity: 0}}
+                                whileInView={{opacity:1}}
+                                transition={{duration: 1.5, delay: 0.5}}
+                                className="about__detail"
+                            >
+                                <p className="about__question">My Tech Stacks</p>
+                                <div className="about__skills">
+                                    <p className="about__skill bg-blue">HTML</p>
+                                    <p className="about__skill bg-blue">CSS</p>
+                                    <p className="about__skill bg-blue">Sass</p>
+                                    <p className="about__skill bg-blue">JavaScript</p>
+                                    <p className="about__skill bg-blue">React</p>
+                                    <p className="about__skill bg-blue">BootStrap</p>
+                                    <p className="about__skill bg-red">Node.js</p>
+                                    <p className="about__skill bg-red">Express.js</p>
+                                    <p className="about__skill bg-red">MongoDB</p>
+                                    <p className="about__skill bg-red">Mongoose</p>
+                                    <p className="about__skill bg-red">MySQL</p>
+                                    <p className="about__skill bg-red">Knex.js</p>
+                                </div>
+                            </motion.div>
                         </div>
-                        <div className="about__btn-container">
+                        {/* <motion.div 
+                            initial={{opacity: 0}}
+                            whileInView={{opacity:1}}
+                            transition={{duration: 1.5, delay: 0.5}}
+                            className="about__btn-container">
                             <button className="about__btn">Read my full bio</button>
-                        </div>
+                        </motion.div> */}
                     </div>
-            </div>    
+                </div>    
         </div>
         {/* Project Section */}
         <div className="homepage__projects">
-            <div className="projects__title-container">
+            <motion.div
+                initial={{opacity: 0}}
+                whileInView={{opacity:1}}
+                transition={{duration: 1.5, delay: 0.5}}
+                className="projects__title-container"
+            >
                 <h1 className="projects__title">FEATURED PROJECTS</h1>
                 <div className="projects__border"></div>
-            </div>
-        
+            </motion.div>
         {/* Project 1 */}
-        <div className="projects__project">
+        <motion.div 
+            initial={{opacity: 0}}
+            whileInView={{opacity:1}}
+            transition={{duration: 1.5, delay: 0.5}}
+            className="projects__project">
             <p className="project__title">BrainBox</p>
             <div className="project__content">
                 <img src={brainbox} alt="" className="project__img" />
@@ -172,8 +228,12 @@ const Homepage = () => {
                     
                 </div>
             </div>
-        </div>
-        <div className="projects__project">
+        </motion.div>
+        <motion.div 
+            initial={{opacity: 0}}
+            whileInView={{opacity:1}}
+            transition={{duration: 1.5, delay: 0.5}}
+            className="projects__project">
             <p className="project__title">Explore+City.</p>
             <div className="project__content">
                 <img src={explorecity} alt="" className="project__img" />
@@ -195,8 +255,12 @@ const Homepage = () => {
                     
                 </div>
             </div>
-        </div>
-        <div className="projects__project">
+        </motion.div>
+        <motion.div 
+            initial={{opacity: 0}}
+            whileInView={{opacity:1}}
+            transition={{duration: 1.5, delay: 0.5}}
+            className="projects__project">
             <p className="project__title">Ai Image Generator</p>
             <div className="project__content">
                 <img src={ai} alt="" className="project__img" />
@@ -220,7 +284,13 @@ const Homepage = () => {
                     
                 </div>
             </div>
-        </div>
+        </motion.div>
+        <Link to="/projects" className="project__archive-link">
+            <motion.a>
+                All Archived Projects
+                <img src={link} alt="link icon" className="project__archive"/>
+            </motion.a>
+        </Link>
         </div>
     </div>
     )
