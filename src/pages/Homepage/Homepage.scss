@@ -178,10 +178,10 @@
         }
     }
     &__detail {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         margin-bottom: 2.5rem;
-        line-height: 1.25rem;
+        line-height: 1.35rem;
         @include desktop {
             margin-bottom: 3rem;
             font-size: 14px;
@@ -218,6 +218,7 @@
         color: $green;
         font-weight: 600;
         margin-bottom: 0.5rem;
+        font-size: 14px;
     }
 }
 .projects {
