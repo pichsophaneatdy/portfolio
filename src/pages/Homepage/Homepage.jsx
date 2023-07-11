@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 // Images
 import forest from "../../asset/output-onlinepngtools.png";
 import sun from "../../asset/sun.png";
-import avatar from "../../asset/Avatars - Default with Backdrop.png";
 import link from "../../asset/icons8-external-link-48 (1).png";
 // Screenshort 
 import explorecity from "../../asset/explorecity.jpeg";
