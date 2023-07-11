@@ -1,13 +1,27 @@
 import React from 'react';
 import "./Project.scss";
 import {motion} from "framer-motion";
+import { Link } from 'react-router-dom';
 // data
 import projects from '../../data/project';
 // icon
 import link from "../../asset/icons8-external-link-48 (1).png";
+import arrow from "../../asset/icons8-back-arrow-32 (1).png";
 const Project = () => {
     return (
         <div className="projectPage">
+            <Link to="/" className="link">
+                <motion.div 
+                    initial={{x:-200}}
+                    animate={{x: 0}}
+                    transition={{duration: 1.5}}
+                    className="return__container">
+                    <img src={arrow} alt="Back arrow" className="return__icon" />
+                    <p className="return__text">
+                        Pichsophaneat Dy
+                    </p>
+                </motion.div>
+            </Link>
             <motion.p 
                 initial={{x:-200}}
                 animate={{x: 0}}

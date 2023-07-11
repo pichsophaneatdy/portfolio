@@ -61,12 +61,12 @@ const Header = () => {
                             <p className="header__item-text">03</p>
                             <p className="header__item-text">Experience</p>
                         </NavLink>
-                        <NavLink to="/resume" onClick={()=>{
+                        <a target="__blank" href="https://drive.google.com/file/d/12HI4vLWpsPQZxZhVsfQRkb5nrT3U4uny/view?usp=sharing" onClick={()=>{
                                 setIsMenuOpen(false);
                             }} className={active === 4 ? "header__item--active" : "header__item"}>
                             <p className="header__item-text">04</p>
                             <p className="header__item-text">Resume</p>
-                        </NavLink>
+                        </a>
                     </nav>
                 </div>
         </motion.nav>
@@ -103,9 +103,9 @@ const Header = () => {
                 <NavLink className="header__anchor" to="/experience">
                     <p className={active === 3 ? "header__link--active" : "header__link"}>03<span>Experience</span></p>
                 </NavLink>
-                <NavLink className="header__anchor" to="/resume">
+                <a target="__blank" href="https://drive.google.com/file/d/1B1AkgCpCYkR_SpMh4-8Ul5U05POcPDfB/view?usp=sharing" className="header__anchor" to="/resume">
                     <p className={active === 4 ? "header__link--active" : "header__link"}>04<span>Resume</span></p>
-                </NavLink>
+                </a>
             </div>
             <div className="header__right">
                 <button 

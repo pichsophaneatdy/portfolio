@@ -340,6 +340,12 @@
         color: black;
         text-decoration: none;
         color: $green;
+        cursor: pointer;
+        &:hover {
+            border-bottom: solid 2px $green;
+            transition: 0.5s;
+            padding-bottom: 0.2rem;
+        }
     }
     &__archive{
         width: 20px;

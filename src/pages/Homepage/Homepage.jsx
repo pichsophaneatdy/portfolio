@@ -221,10 +221,10 @@ const Homepage = () => {
                     </div>
                     <p className="project__detail">BrainBox is a student-focused platform resembling LinkedIn, designed to connect students based on their university, degree, and courses. BrainBox offers news feed, course analysis, and a marketplace. It enhances networking and collaboration between students.</p>
                     
-                    <div className="project__btn-container">
+                    <a href="https://github.com/pichsophaneatdy/brainbox-front-end" className="project__btn-container">
                         <button className="project__btn">View project</button>
                         <div className="project__btn-bg"></div>
-                    </div>
+                    </a>
                     
                 </div>
             </div>
@@ -248,10 +248,10 @@ const Homepage = () => {
                     </div>
                     <p className="project__detail">Explore+City. is a full-stack application that revolutionizes city exploration. With just a few clicks, users can search for a city, uncovering valuable information about cost of living, weather, air quality, tourist attractions and more.</p>
                     
-                    <div className="project__btn-container">
+                    <a href="https://github.com/pichsophaneatdy/Explore_City_FrontEnd" className="project__btn-container">
                         <button className="project__btn">View project</button>
                         <div className="project__btn-bg"></div>
-                    </div>
+                    </a>
                     
                 </div>
             </div>
@@ -277,17 +277,17 @@ const Homepage = () => {
                     </div>
                     <p className="project__detail">AI Image Generator is a MERN stack application that utilizes artificial intelligent(DALL-E) to generate image based on user prompts. Also, users can share the generated image on the community page, and other users can later download those images.</p>
                     
-                    <div className="project__btn-container">
+                    <a href="https://github.com/pichsophaneatdy/AI-Image-Generator" className="project__btn-container">
                         <button className="project__btn">View project</button>
                         <div className="project__btn-bg"></div>
-                    </div>
+                    </a>
                     
                 </div>
             </div>
         </motion.div>
         <Link to="/projects" className="project__archive-link">
             <motion.a>
-                All Archived Projects
+                View Full Project Archive
                 <img src={link} alt="link icon" className="project__archive"/>
             </motion.a>
         </Link>

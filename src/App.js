@@ -7,7 +7,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Homepage from './pages/Homepage/Homepage';
 import Project from './pages/ProjectPage/Project';
 import Experience from './pages/Experience/Experience';
-import Resume from './pages/Resume/Resume';
+
 function App() {
   return (
     <BrowserRouter>
@@ -18,7 +18,6 @@ function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/projects" element={<Project />} />
             <Route path="/experience" element={<Experience />} />
-            <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
     </BrowserRouter>

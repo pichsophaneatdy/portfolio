@@ -21,41 +21,39 @@ const projects = [
         link: "https://github.com/TristanPernot/instock"
     },
     {
-        date: "May 2023",
+        date: "MAY 2023",
         name: "Explore+City.",
         type: "Personal Project",
         technology: ["Node.js", "Express.js","MongoDB"],
         link: "https://github.com/pichsophaneatdy/Explore_City_FrontEnd"
     },
-    // Need Git Repo
     {
-        date: "May 2023",
-        name: "TastyTreat",
-        type: "Hackathon",
+        date: "MAY 2023",
+        name: "Tasty Eats",
+        type: "Hackathon Project",
         technology: ["React", "Node.js","Express.js"],
-        link: "https://github.com/pichsophaneatdy/brainbox-front-end"
+        link: "https://github.com/pichsophaneatdy/Tasty-Eats/tree/main"
     },
     {
-        date: "May 2023",
+        date: "MAY 2023",
         name: "Brainflix",
         type: "Bootcamp Project",
         technology: ["React", "Node.js","Express.js"],
         link: "https://github.com/pichsophaneatdy/pichsophaneat-dy-brainflix"
     },
     {
-        date: "May 2023",
+        date: "MAY 2023",
         name: "Ai Image Generator",
         type: "Personal Project",
         technology: ["JavaScript","DALL-E", "Cloudinary"],
         link: "https://github.com/pichsophaneatdy/AI-Image-Generator"
     },
-    // Need Git Repo
     {
-        date: "May 2023",
+        date: "MAY 2023",
         name: "Weather App",
         type: "Hackathon",
         technology: ["HTML", "SASS","JavaScript"],
-        link: "https://github.com/pichsophaneatdy/brainbox-front-end"
+        link: "https://github.com/pichsophaneatdy/Weather-App"
     },
     {
         date: "APR 2023",
