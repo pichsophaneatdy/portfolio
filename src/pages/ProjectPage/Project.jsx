@@ -2,6 +2,8 @@ import React from 'react';
 import "./Project.scss";
 import {motion} from "framer-motion";
 import { Link } from 'react-router-dom';
+// components
+import Projects from '../../components/Projects/Projects';
 // data
 import projects from '../../data/project';
 // icon
@@ -30,10 +32,11 @@ const Project = () => {
             >
                 All Projects
             </motion.p>
+            <Projects />
             <motion.table 
-                initial={{y:1000}}
+                initial={{y:500}}
                 animate={{y: 0}}
-                transition={{duration: 2.5, delay: 0.5}}
+                transition={{duration: 1.5, delay: 0.5}}
                 className="projectPage__table"
             >
                 <thead>
