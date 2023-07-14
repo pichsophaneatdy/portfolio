@@ -11,6 +11,7 @@ import link from "../../asset/icons8-external-link-48 (1).png";
 import arrow from "../../asset/icons8-back-arrow-32 (1).png";
 const Project = () => {
     return (
+        <div className="projectPage__container">
         <div className="projectPage">
             <Link to="/" className="link">
                 <motion.div 
@@ -80,6 +81,7 @@ const Project = () => {
                 }
                 </tbody>
             </motion.table>
+        </div>
         </div>
     )
 }

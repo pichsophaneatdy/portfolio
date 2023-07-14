@@ -12,17 +12,19 @@ const Projects = () => {
             transition={{duration: 1.5, delay: 0.5}}
             className="projects-scroll">
             {
-                data.map((project) => {
+                data.map((project, index) => {
                     return (
-                        <div className="project-card">
+                        <a href={project.link} target="__blank" key={index} className="project-card">
                             <div className="project-card__container">
                                 <img src={project.image} alt={project.name} className="project-card__image" />
                             </div>
                             <div className="project-card__content">
                                 <p className="project-card__name">{project.name}</p>
-                                <img src={github} alt="" className="project-card__icon"/>
+                                <a href={project.link} target="__blank">
+                                    <img src={github} alt="" className="project-card__icon"/>
+                                </a>
                             </div>
-                        </div>
+                        </a>
                     )
                 })
             }
