@@ -209,6 +209,36 @@ const Homepage = () => {
             whileInView={{opacity:1}}
             transition={{duration: 1.5, delay: 0.5}}
             className="projects__project">
+            <p className="project__title">LeetLog</p>
+            <div className="project__content">
+                <img src="https://i.imgur.com/Q5c6vQX.png" alt="" className="project__img" />
+                <div className="project__info">
+                    <div className="project__techstacks">
+                        <p className="project__item">TypeScript</p>
+                        <p className="project__item">React</p>
+                        <p className="project__item">Apollo Client</p>
+                        <p className="project__item">Node.js</p>
+                        <p className="project__item">GraphQL</p>
+                        <p className="project__item">MongoDB</p>
+                        <p className="project__item">Mongoose</p>
+                        <p className="project__item">Apollo Server</p>
+                        <p className="project__item">Firebase</p>
+                    </div>
+                    <p className="project__detail">LeetLog is a full-stack web application that helps users keep track of their progress in solving LeetCode questions. Additionally, LeetLog provides a distribution map that visualizes the user's progress over time, making it easier to track improvements in problem-solving skills.</p>
+                    
+                    <a href="https://github.com/pichsophaneatdy/Leetlog-Server" className="project__btn-container">
+                        <button className="project__btn">View project</button>
+                        <div className="project__btn-bg"></div>
+                    </a>
+                    
+                </div>
+            </div>
+        </motion.div>
+        <motion.div 
+            initial={{opacity: 0}}
+            whileInView={{opacity:1}}
+            transition={{duration: 1.5, delay: 0.5}}
+            className="projects__project">
             <p className="project__title">BrainBox</p>
             <div className="project__content">
                 <img src={brainbox} alt="" className="project__img" />
