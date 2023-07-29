@@ -1,5 +1,23 @@
 const projects = [
     {
+        date: "JULY 2023",
+        name: "LeetLog",
+        type: "Personal Project",
+        technology: ["GraphQL", "Firebase","TypeScript"],
+        link: "https://github.com/pichsophaneatdy/Leetlog-Server",
+        image: "https://i.imgur.com/Q5c6vQX.png",
+        desc: "A tracking system for solving leetcode questions"
+    },
+    {
+        date: "JULY 2023",
+        name: "Personal Website",
+        type: "Personal Project",
+        technology: ["React", "Framer Motion", "JavaScript"],
+        link: "https://github.com/pichsophaneatdy/portfolio",
+        image: "https://i.imgur.com/X4pbIb8.png",
+        desc: "Personal website featuring projects, experience and about."
+    },
+    {
         date: "JUN 2023",
         name: "BrainBox",
         type: "Personal Project",

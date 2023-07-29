@@ -166,6 +166,7 @@ const Homepage = () => {
                                     <p className="about__skill bg-blue">CSS</p>
                                     <p className="about__skill bg-blue">Sass</p>
                                     <p className="about__skill bg-blue">JavaScript</p>
+                                    <p className="about__skill bg-blue">TypeScript</p>
                                     <p className="about__skill bg-blue">React</p>
                                     <p className="about__skill bg-blue">BootStrap</p>
                                     <p className="about__skill bg-red">Node.js</p>
@@ -174,6 +175,10 @@ const Homepage = () => {
                                     <p className="about__skill bg-red">Mongoose</p>
                                     <p className="about__skill bg-red">MySQL</p>
                                     <p className="about__skill bg-red">Knex.js</p>
+                                    <p className="about__skill bg-red">GraphQL</p>
+                                    <p className="about__skill bg-red">Apollo Server</p>
+                                    <p className="about__skill bg-red">Apollo Client</p>
+                                    <p className="about__skill bg-red">Firebase</p>
                                 </div>
                             </motion.div>
                         </div>

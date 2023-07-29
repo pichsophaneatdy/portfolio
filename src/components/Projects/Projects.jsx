@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 const Projects = () => {
     return (
         <motion.div 
-            initial={{y:500}}
+            initial={{y:700}}
             animate={{y: 0}}
             transition={{duration: 1.5, delay: 0.5}}
             className="projects-scroll">
