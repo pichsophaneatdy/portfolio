@@ -41,7 +41,7 @@ const Homepage = () => {
                         className="hero__desc"
                     >
                         <p className="hero__title">Hello,</p>
-                        <p className="hero__title">I am <span className="hero__name">Neat.</span></p>
+                        <p className="hero__title">This is <span className="hero__name">Neat.</span></p>
                         <p className="hero__title">I am a web developer.</p>
                     </motion.div>
                     <motion.p 
