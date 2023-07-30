@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Personal Website
+This is a simple portfolio website built using React. The website showcases my skills, projects, and provides information about me to potential employers or visitors.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://github.com/pichsophaneatdy/portfolio/assets/95105372/d853a6dc-708c-4d8b-b0ec-83e9e49cd456
 
-## Available Scripts
+## Live Site
 
-In the project directory, you can run:
+Check out the deployed version at: ***https://pichsophaneatdy.com/***
 
-### `npm start`
+## Why I build this personal website
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A personal portfolio website is an essential tool for showcasing your skills, projects, work experience, and providing a glimpse of your personality to potential employers or clients. This simple portfolio website built on React offers a clean and user-friendly interface to present your work effectively.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- About Me: An introduction section to tell visitors about yourself, your background, and career objectives.
+- Skills: A section to display your key skills and areas of expertise.
+- Projects: Showcase your portfolio projects with brief descriptions and links to live demos or GitHub repositories.
+- Contact: A contact form or contact information for visitors to reach out to you.
+- Responsive Design: The website is mobile-friendly and adapts to different screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+The portfolio website is built using the following technologies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React: A popular JavaScript library for building user interfaces.
+- HTML/CSS: For structuring and styling the website.
+- Framer motion: For animation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To set up and run the portfolio website locally on your machine, follow the steps below:
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone this GitHub repository to your local machine.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/pichsophaneatdy/portfolio.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Navigate to the project directory.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd portfolio
+```
 
-## Learn More
+3. Install the required dependencies.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Configuration
 
-### Code Splitting
+Edit the necessary information in the relevant components to customize the portfolio website according to your needs:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **src/pages/HomePage.jsx**: Modify the content in this component to introduce yourself.
+- **src/pages/ProjectPage.jsx**: Add your projects with brief descriptions and links to live demos or GitHub repositories.
+- **src/pages/Experience.jsx**: Add your experiences with brief description
 
-### Analyzing the Bundle Size
+### Running the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Start the development server to see the portfolio website in action:
 
-### Making a Progressive Web App
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The portfolio website should now be accessible in your browser at `http://localhost:3000/`.
 
-### Advanced Configuration
+## Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to customize the portfolio website to suit your preferences. You can change the layout, colors, fonts, and add more sections as needed. Additionally, you can integrate additional features such as a blog or add animations to make the website more visually appealing.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using this simple portfolio website template! I hope it helps you showcase your work and skills effectively. Happy coding! 🚀
