@@ -35,7 +35,7 @@ const Header = () => {
     }, [currentLocation])
     return (
     <header>
-            <motion.nav
+        {isMenuOpen && <motion.nav
                 initial={false}
                 animate={isMenuOpen ? "open" : "closed"}
                 variants={variants}
@@ -69,7 +69,7 @@ const Header = () => {
                         </a>
                     </nav>
                 </div>
-        </motion.nav>
+        </motion.nav>}
 
         
         <div className="header2">
