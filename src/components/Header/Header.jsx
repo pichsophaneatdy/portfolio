@@ -61,7 +61,7 @@ const Header = () => {
                             <p className="header__item-text">03</p>
                             <p className="header__item-text">Experience</p>
                         </NavLink>
-                        <a target="__blank" href="https://drive.google.com/file/d/12HI4vLWpsPQZxZhVsfQRkb5nrT3U4uny/view?usp=sharing" onClick={()=>{
+                        <a target="__blank" href="https://drive.google.com/file/d/1B1AkgCpCYkR_SpMh4-8Ul5U05POcPDfB/view?usp=sharing" onClick={()=>{
                                 setIsMenuOpen(false);
                             }} className={active === 4 ? "header__item--active" : "header__item"}>
                             <p className="header__item-text">04</p>
