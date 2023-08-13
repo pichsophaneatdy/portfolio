@@ -30,6 +30,7 @@ const Homepage = () => {
     }
     return (
         <div className="homepage">
+            {/* Hero Section */}
             <div className="homepage__hero">
                 <div className="hero__left">
                     <motion.div 
